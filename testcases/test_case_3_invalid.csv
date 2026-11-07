@@ -1,0 +1,8 @@
+Name,Maths,Physics,Chemistry
+Valid Student,80,70,90
+,80,70,90
+Too High,101,80,90
+Negative Marks,-5,80,90
+Invalid Text,abc,80,90
+Missing Marks,80,,90
+Another Valid Student,40,50,60

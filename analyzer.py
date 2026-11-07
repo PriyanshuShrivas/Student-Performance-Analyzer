@@ -59,11 +59,11 @@ def display_statistics(data, report_dir):
     print(f"Mean Percentage      : {mean_value:.2f}")
     print(f"Median Percentage    : {median_value:.2f}")
 
-    if not mode_values.empty:
+    if data["Percentage"].value_counts().max() == 1:
+        print("Mode Percentage      : No mode")
+    else:
         modes = ", ".join(f"{value:.2f}" for value in mode_values)
         print(f"Mode Percentage      : {modes}")
-    else:
-        print("Mode Percentage      : No mode")
 
     print(f"Std Dev (Population) : {std_value:.2f}")
 
